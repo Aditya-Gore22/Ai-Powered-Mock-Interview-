@@ -4,6 +4,7 @@
 This is a full-featured Mock Interview System built with HTML, CSS, JavaScript, PHP, and MySQL. It simulates real interview environments using webcam, microphone, AI-based evaluation, and speech-to-text conversion. The system helps users practice job-specific interview questions and receive feedback instantly.
 
 🚀 Features<br>
+
         🎯 Select job role and generate AI-based interview questions (Gemini API)
         
         🎤 Record answers using microphone (Web Speech API for speech-to-text)
@@ -19,6 +20,7 @@ This is a full-featured Mock Interview System built with HTML, CSS, JavaScript, 
         💾 Monaco Editor for coding questions (if applicable)
 
 🧱 Tech Stack <br>
+
         Frontend: HTML, CSS, JavaScript
         
         Backend: PHP (without Composer)
@@ -30,6 +32,7 @@ This is a full-featured Mock Interview System built with HTML, CSS, JavaScript, 
         AI Tools: Web Speech API, Gemini AI
 
 🗃️ Database Tables <br>
+
       interviews – Stores mock questions and job details
       
       userAnswer – Stores answers, ratings, and feedback
@@ -42,6 +45,7 @@ This is a full-featured Mock Interview System built with HTML, CSS, JavaScript, 
       Answer recording and auto-validation (min 10 words)
 
 📦 How to Run<br>
+
     1.  Clone the repo and set up XAMPP.
       
     2.  Import the database schema provided.
