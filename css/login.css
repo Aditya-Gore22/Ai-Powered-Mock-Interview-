@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.header {
+    /* background-color: #007bff; */
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+/* .logo {
+    font-size: 20px;
+    font-weight: bold;
+} */
+.logo {
+    padding-left: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Brushed Script';
+}
+.home-button {
+    background-color: white;
+    color: blue;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.home-button:hover {
+    background-color: rgb(146, 199, 255);
+}
+.container {
+    background-image: url('https://img.freepik.com/premium-photo/abstract-background-beautiful-close-up-image-ai-generated_859483-134076.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    height: 400px;
+    background-color: snow;
+    padding: 20px;
+    border:1px solid #0f2027;
+    border-radius: 20px;
+    position: relative;
+}
+.title {
+    font-size: 28px;
+    /* color: royalblue; */
+    background: linear-gradient(20deg, #0f2027, #203a43, #2c5364);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.title::before, .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    /* background-color: royalblue; */
+    background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+}
+.title::before {
+    width: 18px;
+    height: 18px;
+    background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+}
+.title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+}
+.message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+}
+.signin {
+    text-align: center;
+}
+.signin a {
+    color: royalblue;
+}
+.signin a:hover {
+    text-decoration: underline royalblue;
+}
+.form label {
+    position: relative;
+}
+.form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid #0f2027;
+    border-bottom:3px solid  black ;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+.form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+}
+.form label .input:focus + span, .form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+.form label .input:valid + span {
+    color: green;
+}
+.submit {
+    border: none;
+    outline: none;
+    /* background-color: royalblue; */
+    background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+}
+.submit:hover {
+    /* background-color: rgb(56, 90, 194); */
+    background: linear-gradient(45deg,#2c5364 , #203a43,#0f2027 );
+    font-weight: bold;
+    box-shadow: 0 4px 8px #2c5364, 0 0 15px #0f2027;
+}
+@keyframes pulse {
+    from {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
