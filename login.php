@@ -44,7 +44,7 @@
 <body>
     <div class="header">
         <div class="logo">Ai Mock Interview</div>
-        <button class="home-button" onclick="location.href='index.html'">Home</button>
+        <button class="home-button" onclick="location.href='index.php'">Home</button>
     </div>
 
     <div class="container">

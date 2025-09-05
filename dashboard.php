@@ -29,7 +29,7 @@
 
     <div class="add-div">
         <div class="add" onclick="openDialog()">
-          <H2>+Add New</H2>
+          <h2>+Add New</h2>
         </div>
     </div>
 
@@ -49,7 +49,7 @@
         ?>
             <div class="card">
                 <h3><?php echo ucwords(strtolower($row['job_position']));; ?></h3>
-                <p style="color: #2c5364; font-weight:bold;"> <?php echo $row['job_description']; ?></p>
+                <h4 style="color: #2c5364; font-weight:bold;"> <?php echo $row['job_description']; ?></h4>
                 <p><strong>Years of Experience :</strong> <?php echo $row['job_experience']; ?></p>
                 <p><strong>Created At :</strong> <?php 
                 $date=explode(' ', $row['created_at']);

@@ -53,4 +53,3 @@ This is a full-featured Mock Interview System built with HTML, CSS, JavaScript, 
     3.  Add your Gemini API key in the PHP files.
       
     4.  Start the Apache server and navigate to localhost.
-

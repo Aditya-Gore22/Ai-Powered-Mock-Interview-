@@ -34,7 +34,7 @@ $mockid = uniqid();
 $apiKey = $config['GEMINI_API_KEY'];
 $url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=$apiKey";
 
-$prompt = "Job Position: $jobPosition, Job Description: $jobDesc, Years of Experience: $jobExperience, Depends on this information please give me 5 interview questions with answers in JSON format, Give questions and answered as field in JSON";
+$prompt = "Job Position: $jobPosition, Job Description: $jobDesc, Years of Experience: $jobExperience, Depends on this information please give me 5 interview questions with answers in JSON format, Give questions and answeres as field, like this: {\"question\": \"Question text\", \"answer\": \"Answer text\"}.";
 
 $requestBody = json_encode([
     "contents" => [["parts" => [["text" => $prompt]]]]

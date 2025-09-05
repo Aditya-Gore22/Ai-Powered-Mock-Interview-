@@ -16,16 +16,16 @@ $stmt->execute();
 $result = $stmt->get_result();
 
 $totalRating = 0;
-$totalQuestions = 0;
+$totalQuestions = 5;
 $questionsData = [];
-
+   
 while ($row = $result->fetch_assoc()) {
     $totalRating += (int) $row['rating'];
-    $totalQuestions++;
+    // $totalQuestions++;
     $questionsData[] = $row;
 }
 
-$overallRating = ($totalQuestions > 0) ? round(($totalRating / $totalQuestions), 1) : 0;
+$overallRating = ($totalQuestions > 0) ? round(($totalRating /$totalQuestions), 1) : 0;
 
 $stmt->close();
 $conn->close();
@@ -207,7 +207,7 @@ $conn->close();
     ?>
 
     <button id="startBtn" class="btn purple-btn" onclick="gotoDashboard()">Goto Dashboard</button>
-
+    
     <script>
         function gotoDashboard() {
             window.location.href = "dashboard.php";

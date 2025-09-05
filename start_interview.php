@@ -55,10 +55,11 @@ if ($data) {
 </head>
 <body>
     <?php include('header.php'); ?>
+    <h2 class="title">Let's Get Started</h2>
     <div class="main-container">
         <!-- Left Section: Job Details & Info -->
         <div class="left-section">
-            <h2 style="margin: 10px; padding-bottom: 10px;">Let's Get Started</h2>
+            
             <div class="job-details">
                 <p><strong>Job Role/Job Position:</strong> <?php echo htmlspecialchars($data['job_position']); ?></p>
                 <p><strong>Job Description/Tech Stack:</strong> <?php echo htmlspecialchars($data['job_description']); ?></p>
